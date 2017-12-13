@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!--<group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_facebook"
+            android:icon="@drawable/ic_facebook"
+            android:title="@string/menu_facebook" />
+
+    <item
+        android:id="@+id/menu_messenger"
+        android:icon="@drawable/ic_messenger"
+        android:title="@string/menu_messenger"/>
+
+    <item
+        android:id="@+id/menu_instagram"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="@string/menu_instagram"/>
+
+        <item
+            android:id="@+id/menu_youtube"
+            android:icon="@drawable/ic_youtube"
+            android:title="@string/menu_youtube"/>
+
+        <item
+            android:id="@+id/menu_meteo"
+            android:icon="@drawable/ic_meteo"
+            android:title="@string/menu_meteo"/>
+
+        <item
+            android:id="@+id/menu_amazon"
+            android:icon="@drawable/ic_amazon"
+            android:title="@string/menu_amazon"/>
+
+    </group>-->
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_index"
+            android:icon="@drawable/cactus"
+            android:title="@string/menu_index" />
+
+        <item
+            android:id="@+id/menu_index_old"
+            android:icon="@drawable/cactus"
+            android:title="@string/menu_index_old"/>
+
+        <item
+            android:id="@+id/menu_host"
+            android:icon="@drawable/cactus"
+            android:title="@string/menu_host"/>
+
+        <item
+            android:id="@+id/menu_graph_view"
+            android:icon="@drawable/cactus"
+            android:title="@string/menu_graph_view"/>
+
+        <item
+            android:id="@+id/menu_settings"
+            android:icon="@drawable/cactus"
+            android:title="@string/menu_settings"/>
+
+        <!--<item
+            android:id="@+id/menu_amazon"
+            android:icon="@drawable/ic_amazon"
+            android:title="@string/menu_amazon"/>-->
+
+    </group>
+
+
+</menu>
