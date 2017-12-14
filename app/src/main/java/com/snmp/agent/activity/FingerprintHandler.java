@@ -46,13 +46,13 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
     @Override
     public void onAuthenticationError(int errMsgId, CharSequence errString) {
         //this.update("Fingerprint Authentication error\n" + errString, false);
-        this.update("Erreur lors de l'auithenfication\n" + errString, false);
+        this.update("Erreur lors de l'authentification\n" + errString, false);
     }
 
 
     @Override
     public void onAuthenticationHelp(int helpMsgId, CharSequence helpString) {
-        this.update("Fingerprint Authentication help\n" + helpString, false);
+        this.update("" + helpString, false);
     }
 
 
@@ -68,7 +68,7 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
         //this.update("Fingerprint Authentication succeeded.", true);
         this.update("Authentification par empreinte digitale réussie !", true);
         Toast.makeText(context,"B I E N V E N U E",Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(context,MainActivity.class);
+        Intent intent = new Intent(context,HomeActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         context.startActivity(intent);
     }

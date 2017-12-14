@@ -36,8 +36,10 @@
 
 
     <color name="colorPrimary">#263237</color>
-    <color name="colorPrimaryDark">#FD7A16</color>
-    <color name="colorAccent">#84c12d</color>
+    <color name="colorPrimaryDark">#C61F1F</color>
+    <color name="colorAccent">#26c411</color>
+
+
     <color name="textPrimary">#f5f5f5</color>
     <color name="textPrimaryDark">#95aab4</color>
     <color name="errorText">#ff7878</color>

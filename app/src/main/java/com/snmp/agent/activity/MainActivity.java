@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity
         myWebView.getSettings().setSavePassword(true);
         myWebView.getSettings().setSaveFormData(true);
 
-        load_view("facebook");
+        load_view("index");
         myWebView.setWebViewClient(new MywebViewClient());
 
         mySwipeRefreshLayout.setOnRefreshListener(
@@ -140,27 +140,6 @@ public class MainActivity extends AppCompatActivity
                 .show();
     }
 
-    /*@Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            if(myWebView.canGoBack()){
-                myWebView.goBack();
-            }
-            else {
-                //Context context = getApplicationContext();
-                //CharSequence text = "Utilisez le menu pour quitter l'application";
-                //int duration = Toast.LENGTH_SHORT;
-                //Toast toast = Toast.makeText(context, text, duration);
-                //toast.show();
-
-                Toast.makeText(MainActivity.this,"Utilisez le menu pour quitter l'application",Toast.LENGTH_LONG);
-                //super.onBackPressed();
-            }
-        }
-    }*/
 
 
     @Override

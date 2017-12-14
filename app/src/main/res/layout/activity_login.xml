@@ -43,21 +43,24 @@
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:clickable="true"
                     android:focusable="true"
                     android:onClick="onClick"
+                    android:paddingTop="12sp"
                     app:srcCompat="@drawable/cactus" />
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="60dp"
                     android:paddingTop="@dimen/nav_header_vertical_spacing"
-                    android:text="Cactus Liiiife"
+                    android:text="Cacti REBORN"
                     android:gravity="center_horizontal"
                     android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:letterSpacing="1"
+                    android:textSize="20sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 
@@ -68,6 +71,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="268dp"
                 android:gravity="center"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
                 android:orientation="vertical">
 
                 <EditText

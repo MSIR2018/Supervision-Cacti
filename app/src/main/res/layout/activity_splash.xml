@@ -2,40 +2,28 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000">
+    android:background="@color/colorPrimary">
 
 
     <ImageView
         android:id="@+id/imgLogo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/routerx512" />
+        android:layout_marginBottom="100sp"
+        android:src="@drawable/cactus" />
 
-
-    <TextView
-        android:layout_width="200sp"
-        android:layout_height="50sp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Cacti Client"
-        android:textColor="#FD7A16"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        />
 
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleSmall"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="20dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:indeterminateTint="#FD7A16"/>
+        android:indeterminateTint="#26c411"/>
 
 
 </RelativeLayout>

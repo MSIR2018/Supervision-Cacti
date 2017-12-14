@@ -14,6 +14,7 @@
 
 
     <TextView
+        android:id="@+id/memoryUsage"
         android:layout_width="match_parent"
         android:text="@string/activity_home_desc"
         android:layout_centerVertical="true"

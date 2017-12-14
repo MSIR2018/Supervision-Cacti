@@ -5,16 +5,15 @@ import android.content.Intent;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.snmp.agent.R;
 import com.snmp.agent.service.AgentService;
-
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created by zirco on 12/12/2017.
@@ -23,6 +22,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class LoginActivity extends AppCompatActivity {
 
     private int nbclick = 0;
+    private String username;
+    private String password;
 
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -30,7 +31,31 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         ImageView myImage = (ImageView) findViewById(R.id.imageView);
+        Button myConnexion = (Button) findViewById(R.id.loginButton);
+        final EditText myUsername = (EditText) findViewById(R.id.username);
+        final EditText myPassword = (EditText) findViewById(R.id.password);
+
         myImage.setClickable(true);
+
+        myConnexion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                username = myUsername.getText().toString();
+                password = myPassword.getText().toString();
+
+                if(username.equals("admin") && password.equals("admin")) {
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
+                else{
+                    Toast.makeText(LoginActivity.this, "Nom d'utilisateur ou Mot de passe incorrect", Toast.LENGTH_LONG).show();
+                }
+
+
+
+            }
+        });
 
 
         myImage.setOnClickListener(new View.OnClickListener(){
@@ -47,9 +72,12 @@ public class LoginActivity extends AppCompatActivity {
                         if (!fingerprintManager.isHardwareDetected()) {
                             // Device doesn't support fingerprint authentication
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            //Toast.makeText(LoginActivity.this,"PAS DE LECTEUR D'EMPREINTE",Toast.LENGTH_SHORT).show();
                             startService(intent);
                         } else if (!fingerprintManager.hasEnrolledFingerprints()) {
                             // User hasn't enrolled any fingerprints to authenticate with
+                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            startActivity(intent);
                         } else {
                             // Everything is ready for fingerprint authentication
 
@@ -61,8 +89,8 @@ public class LoginActivity extends AppCompatActivity {
                         }
                     }
 
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                    startService(intent);
+                    //Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    //startActivity(intent);
 
 
 
