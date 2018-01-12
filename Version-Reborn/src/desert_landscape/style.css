@@ -1,0 +1,478 @@
+body {
+  margin: 0;
+}
+
+.sky {
+  background: linear-gradient(#184655, #dfdfcc 85%);
+  overflow: auto;
+  position: relative;
+}
+
+.mountains {
+  padding: 0 10%;
+}
+.mountains .mountain {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 3%;
+}
+.mountains .range {
+  overflow: hidden;
+}
+.mountains .range:nth-child(1) .mountain {
+  margin-top: 6%;
+  margin-bottom: -15%;
+  margin-left: -8%;
+}
+.mountains .range:nth-child(1) .mountain:nth-child(1) {
+  padding: 9%;
+  background: linear-gradient(23deg, #607C92 70%, #506779 70%);
+  margin-left: 12%;
+}
+.mountains .range:nth-child(1) .mountain:nth-child(2) {
+  padding: 13%;
+  background: linear-gradient(25deg, #607C92 68%, #506779 68%);
+}
+.mountains .range:nth-child(1) .mountain:nth-child(3) {
+  padding: 12%;
+  background: linear-gradient(-17deg, #607C92 90%, transparent 80%), linear-gradient(25deg, #607C92 68%, #506779 68%);
+}
+.mountains .range:nth-child(1) .mountain:nth-child(4) {
+  padding: 13.5%;
+  background: linear-gradient(75deg, transparent 50%, #506779 50%), linear-gradient(14deg, #607C92 80%, #506779 80%);
+}
+.mountains .range:nth-child(2) {
+  margin-top: -17%;
+}
+.mountains .range:nth-child(2) .mountain {
+  margin-top: 6%;
+  margin-bottom: -11.5%;
+  margin-left: -4%;
+}
+.mountains .range:nth-child(2) .mountain:nth-child(1) {
+  padding: 6.3%;
+  background: linear-gradient(13deg, #8795A0 80%, #70818e 80%);
+  margin-left: 8%;
+}
+.mountains .range:nth-child(2) .mountain:nth-child(2) {
+  padding: 10%;
+  background: linear-gradient(0deg, #8795A0 88%, transparent 80%), linear-gradient(37.5deg, #8795A0 56.5%, #70818e 56.5%);
+  margin-left: -3%;
+}
+.mountains .range:nth-child(2) .mountain:nth-child(3) {
+  padding: 11.5%;
+  background: linear-gradient(10deg, #8795A0 85%, #70818e 85%);
+  margin-left: -7%;
+}
+.mountains .range:nth-child(2) .mountain:nth-child(4) {
+  padding: 10%;
+  background: linear-gradient(-10deg, #8795A0 80%, transparent 80%), linear-gradient(25deg, #8795A0 68%, #70818e 68%);
+}
+.mountains .range:nth-child(2) .mountain:nth-child(5) {
+  padding: 5.7%;
+  background: linear-gradient(13deg, #8795A0 80%, #70818e 80%);
+}
+.mountains .range:nth-child(2) .mountain:nth-child(6) {
+  padding: 7.3%;
+  background: linear-gradient(13deg, #8795A0 80%, #70818e 80%);
+}
+
+.moon {
+  margin: 2%;
+  padding: 7%;
+  width: 0;
+  background-color: #F0F3D9;
+  border-radius: 100%;
+  box-shadow: inset -1.2vw -1.2vw rgba(220, 225, 172, 0.5), inset 0.5vw 0.5vw 5vw #a5a5a5, 0 0 2.5vw rgba(219, 221, 198, 0.5);
+  display: inline-block;
+}
+
+.star {
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #d2d0cc;
+  box-shadow: 0 0 0.125em 0.125em rgba(161, 169, 176, 0.5);
+}
+.star:nth-child(2) {
+  left: 22%;
+  top: 49%;
+}
+.star:nth-child(3) {
+  left: 29%;
+  top: 29%;
+}
+.star:nth-child(4) {
+  left: 35%;
+  top: 35%;
+}
+.star:nth-child(5) {
+  left: 37%;
+  top: 7%;
+}
+.star:nth-child(6) {
+  left: 45%;
+  top: 15%;
+}
+.star:nth-child(7) {
+  left: 50%;
+  top: 37%;
+}
+.star:nth-child(8) {
+  left: 56%;
+  top: 13%;
+}
+.star:nth-child(9) {
+  left: 63%;
+  top: 22%;
+}
+.star:nth-child(10) {
+  left: 60%;
+  top: 47%;
+}
+.star:nth-child(11) {
+  left: 67%;
+  top: 47%;
+}
+.star:nth-child(12) {
+  left: 72%;
+  top: 38%;
+}
+.star:nth-child(13) {
+  left: 72%;
+  top: 9%;
+}
+.star:nth-child(14) {
+  left: 49%;
+  top: 28%;
+}
+.star:nth-child(15) {
+  left: 76%;
+  top: 55%;
+}
+
+@-webkit-keyframes glow {
+  0% {
+    background-color: #d2d0cc;
+    box-shadow: 0 0 0.125em 0.125em rgba(161, 169, 176, 0.5);
+  }
+  100% {
+    background-color: whitesmoke;
+    box-shadow: 0 0 .5em .125em #ECECEC;
+  }
+}
+@keyframes glow {
+  0% {
+    background-color: #d2d0cc;
+    box-shadow: 0 0 0.125em 0.125em rgba(161, 169, 176, 0.5);
+  }
+  100% {
+    background-color: whitesmoke;
+    box-shadow: 0 0 .5em .125em #ECECEC;
+  }
+}
+.star:nth-child(odd) {
+  -webkit-animation: glow 2s infinite alternate;
+  animation: glow 2s infinite alternate;
+}
+
+.star:nth-child(even) {
+  -webkit-animation: glow 2s infinite alternate;
+  animation: glow 2s infinite alternate;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.star:nth-child(4n) {
+  -webkit-animation: glow 2s infinite alternate;
+  animation: glow 2s infinite alternate;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/* Desert */
+.desert {
+  position: relative;
+  overflow: hidden;
+}
+.desert .perspective {
+  -webkit-perspective: 1.7em;
+  perspective: 1.7em;
+  background: linear-gradient(#958865 50%, #a09473);
+  overflow: hidden;
+  position: relative;
+  z-index: -2;
+  margin-top: -11.5em;
+}
+.desert .perspective .road {
+  width: 12%;
+  margin: 0 auto;
+  background-color: #3c3c3c;
+  -webkit-transform: rotateX(20deg);
+  transform: rotateX(20deg);
+  height: 30em;
+  border-right: 1.5vw solid;
+  border-left: 1.5vw solid;
+  border-color: #a49979;
+  background: linear-gradient(to right, #3c3c3c 90%, transparent 90%), linear-gradient(#3c3c3c 30%, #d7d325 30%, #d7d325 60%, #3c3c3c 60%);
+  background-size: 55% 5%;
+  -webkit-animation: drive 3s linear infinite;
+  animation: drive 3s linear infinite;
+}
+
+@-webkit-keyframes drive {
+  100% {
+    background-position: 0% 21%;
+  }
+}
+@keyframes drive {
+  100% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 0 0, 0 21%;
+  }
+}
+/* Cactus */
+.cactus {
+  position: absolute;
+  width: 25%;
+  display: inline-block;
+}
+.cactus .center, .cactus .arm {
+  float: left;
+}
+.cactus .center {
+  padding: 65% 20%;
+  background: linear-gradient(to right, #38823D 16%, #307035 16%, #307035 20%, #38823D 20%, #38823D 38%, #307035 38%, #307035 42%, #38823D 42%, #38823D 60%, #307035 60%, #307035 64%, #38823D 64%, #38823D 82%, #307035 82%, #307035 86%, #38823D 86%);
+  border-top-left-radius: 45% 15%;
+  border-top-right-radius: 45% 15%;
+}
+.cactus .arm {
+  background: radial-gradient(transparent 40%, #38823D 41%, #38823D 48%, #307035 48%, #307035 51%, #38823D 51%, #38823D 61%, #307035 61%, #307035 64%, #38823D 64%);
+  padding: 15%;
+  background-size: 200% 200%;
+}
+.cactus .arm::before {
+  content: '';
+  background: radial-gradient(#38823D 23%, #307035 23%, #307035 37%, #38823D 37%);
+  z-index: -1;
+  padding: 6.5%;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: -21%;
+}
+.cactus .arm.left {
+  border-radius: 0 0 0 100%;
+  background-position: 0% 100%;
+  margin-top: 20%;
+}
+.cactus .arm.left::before {
+  margin-left: -15%;
+}
+.cactus .arm.right {
+  border-radius: 0 0 100% 0;
+  background-position: 100% 100%;
+  margin-top: 50%;
+}
+.cactus .arm.right::before {
+  margin-left: 2.25%;
+}
+
+.pedal {
+  position: absolute;
+  left: 55%;
+  top: 10%;
+  border-radius: 7%;
+  padding: 7%;
+  background-color: rosybrown;
+}
+.pedal:nth-child(1) {
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+}
+.pedal:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.pedal:nth-child(3) {
+  -webkit-transform: rotate(75deg);
+  transform: rotate(75deg);
+}
+.pedal:nth-child(4) {
+  background: radial-gradient(gold 20%, transparent 20%, rosybrown 20%);
+}
+
+.owl {
+  width: 40%;
+  margin: 0 auto;
+}
+.owl div {
+  margin: 0 auto;
+}
+.owl .head {
+  width: 45%;
+  padding: 20% 0;
+  border: 0.8vw solid #8D7F6D;
+  border-top-color: transparent;
+  border-top-width: 1.5vw;
+  border-radius: 40%;
+  background: radial-gradient(#CBB8A2 80%, transparent 80%);
+  background-size: 62% 70%;
+  background-clip: padding-box;
+  background-color: goldenrod;
+  background-position: -25% 10%;
+  position: relative;
+}
+.owl .head:before, .owl .head:after {
+  content: '';
+  background: radial-gradient(black 15%, gold 50%);
+  border-radius: 50%;
+  position: absolute;
+  padding: 15%;
+  top: 20%;
+}
+.owl .head:before {
+  left: 10%;
+}
+.owl .head:after {
+  left: 60%;
+}
+.owl .body {
+  padding: 40% 30%;
+  width: 0;
+  border-radius: 25% 25% 35% 35% / 35% 35% 60% 60%;
+  background: linear-gradient(64deg, #A78B67 33.5%, transparent 36%), linear-gradient(-64deg, #A78B67 33.5%, transparent 36%);
+  background-size: 26% 26%;
+  background-color: #cbb8a2;
+  border: 0.8vw solid #8D7F6D;
+  border-bottom-width: 1.2vw;
+  border-bottom-color: transparent;
+  background-clip: padding-box;
+}
+.owl .feet {
+  padding: 8% 23%;
+  background: radial-gradient(#E4C51D 70%, transparent 75%);
+  background-size: 33% 100%;
+  width: 0;
+  margin-top: -12%;
+}
+
+/* ugh firefox, the borders on the owl don't scale, so I use zoom, but firefox doesn't support zoom */
+@-moz-document url-prefix() {
+  .owl .body, .owl .head {
+    border: none;
+  }
+}
+.cactus {
+  position: absolute;
+}
+.cactus .owl {
+  -webkit-animation: owl 10s ease-in infinite;
+  animation: owl 10s ease-in infinite;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  opacity: 0;
+}
+.cactus:nth-child(1) {
+  left: 0%;
+  -webkit-animation: left_cactus 10s ease-in infinite;
+  animation: left_cactus 10s ease-in infinite;
+}
+.cactus:nth-child(2) {
+  left: 75%;
+  width: 0%;
+  -webkit-animation: right_cactus 10s ease-in infinite;
+  animation: right_cactus 10s ease-in infinite;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+/* Animations for the cactus and owl */
+@-webkit-keyframes closer {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@keyframes closer {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@-webkit-keyframes owl {
+  0% {
+    zoom: 0.01;
+    opacity: 1;
+  }
+  100% {
+    zoom: 2;
+    opacity: 1;
+  }
+}
+@keyframes owl {
+  0% {
+    zoom: 0.01;
+    opacity: 1;
+  }
+  100% {
+    zoom: 2;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes left_cactus {
+  0% {
+    width: 0%;
+    top: 5%;
+    left: 40%;
+  }
+  100% {
+    width: 35%;
+    top: 100%;
+    left: -80%;
+  }
+}
+@keyframes left_cactus {
+  0% {
+    width: 0%;
+    top: 5%;
+    left: 40%;
+  }
+  100% {
+    width: 35%;
+    top: 100%;
+    left: -80%;
+  }
+}
+@-webkit-keyframes right_cactus {
+  0% {
+    width: 0%;
+    top: 5%;
+    left: 65%;
+  }
+  100% {
+    width: 35%;
+    top: 80%;
+    left: 165%;
+  }
+}
+@keyframes right_cactus {
+  0% {
+    width: 0%;
+    top: 5%;
+    left: 65%;
+  }
+  100% {
+    width: 35%;
+    top: 80%;
+    left: 165%;
+  }
+}
