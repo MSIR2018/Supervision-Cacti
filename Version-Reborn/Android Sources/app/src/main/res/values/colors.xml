@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <color name="text_color_default">#00000C</color>
+    <color name="text_color_inverse">#f3f3f3</color>
+    <color name="red_cherry">#d20000</color>
+    <color name="orange_fresh">#FD7A16</color>
+    <color name="green_validation">#26c411</color>
+    <color name="disable">#FFFFFF</color>
+    <color name="list_row_default_bg">#f3f3f3</color>
+    <color name="list_row_pressed_bg">#008cef</color>
+    <color name="list_row_selected_bg">#86d3f6</color>
+    
+    <color name="blue_sky">#09568d</color>
+    <color name="darkblue">#172035</color>
+    <color name="black">#000000</color>
+
+
+
+    <color name="colorPrimary">#263237</color>
+    <color name="colorPrimaryDark">#C61F1F</color>
+    <!--<color name="colorAccent">#26c411</color>-->
+    <color name="colorAccent">#988B68</color>
+
+
+
+
+    <color name="textPrimary">#f5f5f5</color>
+    <color name="textPrimaryDark">#95aab4</color>
+    <color name="errorText">#ff7878</color>
+
+</resources>
+
+

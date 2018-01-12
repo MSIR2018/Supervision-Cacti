@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="@drawable/background_transparent"
+    android:cacheColorHint="#00000000">
+    <RelativeLayout
+        android:id="@+id/content_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/buttoncpumemory"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:background="@drawable/button_red"
+            android:textSize="14sp"
+            android:paddingLeft="100sp"
+            android:paddingRight="100sp"
+            android:text="Memory Usage"
+            android:layout_marginTop="20sp"
+            android:textColor="#ffffff"
+            android:singleLine="true"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart1"
+            android:layout_width="match_parent"
+            android:layout_height="600sp"
+            android:layout_below="@+id/buttoncpumemory"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+
+
+                        <RelativeLayout
+                        android:id="@+id/content_home2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+
+                            <Button
+                                android:id="@+id/buttoncpumemory2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40sp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="30sp"
+                                android:layout_marginRight="30sp"
+                                android:background="@drawable/button_green"
+                                android:textSize="14sp"
+                                android:paddingLeft="100sp"
+                                android:paddingRight="100sp"
+                                android:text="CPU Usage"
+                                android:layout_marginTop="20sp"
+                                android:textColor="#ffffff"
+                                android:singleLine="true"/>
+
+                            <com.github.mikephil.charting.charts.PieChart
+                                android:id="@+id/chart2"
+                                android:layout_width="match_parent"
+                                android:layout_height="450sp"
+                                android:layout_below="@+id/buttoncpumemory2"/>
+
+                        </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/content_home3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+
+                        <Button
+                            android:id="@+id/buttoncpumemory3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="30sp"
+                            android:layout_marginRight="30sp"
+                            android:background="@drawable/button_blue"
+                            android:textSize="14sp"
+                            android:paddingLeft="50sp"
+                            android:paddingRight="50sp"
+                            android:text="Espace Disponible"
+                            android:layout_marginTop="20sp"
+                            android:textColor="#ffffff"
+                            android:singleLine="true"/>
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/chart3"
+                            android:layout_width="match_parent"
+                            android:layout_height="450sp"
+                            android:layout_below="@+id/buttoncpumemory3"/>
+                    </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

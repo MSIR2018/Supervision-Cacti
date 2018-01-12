@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_transparent"
+    android:cacheColorHint="#00000000">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttoncpumemory"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:background="@drawable/button_red"
+            android:textSize="14sp"
+            android:paddingLeft="100sp"
+            android:paddingRight="100sp"
+            android:text="Memory Usage"
+            android:layout_marginTop="20sp"
+            android:textColor="#ffffff"
+            android:singleLine="true"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart1"
+            android:layout_width="match_parent"
+            android:layout_height="450sp"
+            android:layout_below="@+id/buttoncpumemory"/>
+
+        <Button
+            android:id="@+id/buttoncpumemory2"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:background="@drawable/button_green"
+            android:textSize="14sp"
+            android:paddingLeft="100sp"
+            android:paddingRight="100sp"
+            android:text="CPU Usage"
+            android:layout_marginTop="20sp"
+            android:textColor="#ffffff"
+            android:singleLine="true"
+            android:layout_below="@+id/chart1"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart2"
+            android:layout_width="match_parent"
+            android:layout_height="450sp"
+            android:layout_below="@+id/buttoncpumemory2"/>
+
+        <Button
+            android:id="@+id/buttoncpumemory3"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:background="@drawable/button_blue"
+            android:textSize="14sp"
+            android:paddingLeft="50sp"
+            android:paddingRight="50sp"
+            android:text="Espace Disponible"
+            android:layout_marginTop="20sp"
+            android:textColor="#ffffff"
+            android:singleLine="true"
+            android:layout_below="@+id/chart2"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart3"
+            android:layout_width="match_parent"
+            android:layout_height="450sp"
+            android:layout_below="@+id/buttoncpumemory3"/>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+
+
+
+
+
+    <!--<SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="8dp"
+        android:layout_toLeftOf="@+id/tvYMax"
+        android:layout_marginRight="5dp"
+        android:max="200"
+        android:paddingBottom="12dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar2"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="35dp"
+        android:layout_toLeftOf="@+id/tvXMax"
+        android:layout_marginRight="5dp"
+        android:max="25"
+        android:paddingBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvXMax"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBar1"
+        android:layout_alignParentRight="true"
+        android:text="500"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvYMax"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBar2"
+        android:layout_alignParentRight="true"
+        android:text="500"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
